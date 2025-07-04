@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>九州六日遊・夏日回憶之旅</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .day-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .day-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 10px;
+            background-color: #38bdf8;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+        .timeline-path::before {
+            content: '';
+            position: absolute;
+            left: -16px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #e0e0e0;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="bg-slate-100">
+
+    <div class="container mx-auto p-4 md:p-8">
+        <!-- 標題 -->
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-800">九州六日遊</h1>
+            <p class="text-lg md:text-xl text-slate-600 mt-2">夏日回憶之旅・行程總覽</p>
+        </header>
+
+        <!-- 行程卡片容器 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Day 1 -->
+            <div class="day-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="day1-櫛田神社的照片.jpg" alt="櫛田神社的照片" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-2xl font-bold text-sky-600">Day 1</h2>
+                        <span class="text-sm font-medium text-slate-500">7/24 (四)</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-700 mb-4">福岡・博多 <span class="text-sm text-slate-500 font-normal">(🚗 約1小時)</span></h3>
+                    
+                    <div class="relative timeline-path pl-5 border-l-2 border-slate-200">
+                        <div class="mb-4 relative timeline-item">
+                            <p class="font-semibold text-slate-800">14:00 - 抵達福岡機場，租車</p>
+                        </div>
+                        <div class="mb-4 relative timeline-item">
+                            <p class="font-semibold text-slate-800">15:15 - 櫛田神社 & 川端商店街</p>
+                        </div>
+                        <div class="mb-4 relative timeline-item">
+                            <p class="font-semibold text-slate-800">16:30 - LaLaport 福岡購物 & 晚餐</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <h4 class="font-bold text-slate-800 mb-3 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-amber-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                            景點與美食
+                        </h4>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2">
+                            <li><a href="https://www.google.com/maps/search/櫛田神社+福岡" target="_blank" class="hover:text-sky-500">櫛田神社：福岡最古老神社</a></li>
+                            <li><a href="https://www.google.com/maps/search/川端商店街+福岡" target="_blank" class="hover:text-sky-500">川端商店街：明太子伴手禮</a></li>
+                            <li><a href="https://www.google.com/maps/search/LaLaport+福岡" target="_blank" class="hover:text-sky-500">LaLaport 福岡：博多拉麵推薦</a></li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t">
+                        <h4 class="font-bold text-slate-800 mb-2 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-teal-500" viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" /></svg>
+                            住宿
+                        </h4>
+                        <a href="https://www.google.com/maps/search/Hotel+Trad+Hakata+福岡" target="_blank" class="text-slate-600 hover:text-sky-500">Hotel Trad Hakata</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="day-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="day2-太宰府天滿宮的照片.jpg" alt="太宰府天滿宮的照片" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-2xl font-bold text-sky-600">Day 2</h2>
+                        <span class="text-sm font-medium text-slate-500">7/25 (五)</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-700 mb-4">福岡 → 太宰府 → 由布院 <span class="text-sm text-slate-500 font-normal">(🚗 約2小時)</span></h3>
+                    
+                    <div class="relative timeline-path pl-5 border-l-2 border-slate-200">
+                        <div class="mb-4 relative timeline-item"><p class="font-semibold text-slate-800">09:30 - 太宰府天滿宮 & 表參道</p></div>
+                        <div class="mb-4 relative timeline-item"><p class="font-semibold text-slate-800">14:00 - 湯之坪老街</p></div>
+                        <div class="mb-4 relative timeline-item"><p class="font-semibold text-slate-800">15:00 - 金鱗湖</p></div>
+                    </div>
+
+                    <div class="mt-6">
+                        <h4 class="font-bold text-slate-800 mb-3 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-amber-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                            景點與美食
+                        </h4>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2">
+                            <li><a href="https://www.google.com/maps/search/太宰府天滿宮" target="_blank" class="hover:text-sky-500">太宰府天滿宮：祈求學業</a></li>
+                            <li><a href="https://www.google.com/maps/search/太宰府+表參道商店街" target="_blank" class="hover:text-sky-500">表參道商店街：梅枝餅必吃</a></li>
+                            <li><a href="https://www.google.com/maps/search/湯之坪老街+由布院" target="_blank" class="hover:text-sky-500">湯之坪老街：溫泉小吃</a></li>
+                            <li><a href="https://www.google.com/maps/search/金鱗湖+由布院" target="_blank" class="hover:text-sky-500">金鱗湖：夢幻晨霧湖景</a></li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t">
+                        <h4 class="font-bold text-slate-800 mb-2 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-teal-500" viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" /></svg>
+                            住宿
+                        </h4>
+                        <a href="https://www.google.com/maps/search/由布院溫泉飯店" target="_blank" class="text-slate-600 hover:text-sky-500">由布院溫泉飯店</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Day 3 -->
+            <div class="day-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="day3-九州自然動物園的照片.jpg" alt="九州自然動物園的照片" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-2xl font-bold text-sky-600">Day 3</h2>
+                        <span class="text-sm font-medium text-slate-500">7/26 (六)</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-700 mb-4">由布院 → 阿蘇 <span class="text-sm text-slate-500 font-normal">(🚗 約2小時)</span></h3>
+                    
+                    <div class="relative timeline-path pl-5 border-l-2 border-slate-200">
+                        <div class="mb-4 relative timeline-item"><p class="font-semibold text-slate-800">09:00 - 九州自然動物園</p></div>
+                        <div class="mb-4 relative timeline-item"><p class="font-semibold text-slate-800">12:00 - 九州夢大吊橋</p></div>
+                        <div class="mb-4 relative timeline-item"><p class="font-semibold text-slate-800">15:00 - 阿蘇神社 & 門前町商店街</p></div>
+                    </div>
+
+                    <div class="mt-6">
+                        <h4 class="font-bold text-slate-800 mb-3 flex items-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-amber-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                            景點與美食
+                        </h4>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2">
+                            <li><a href="https://www.google.com/maps/search/九州自然動物園" target="_blank" class="hover:text-sky-500">九州自然動物園：親子互動</a></li>
+                            <li><a href="https://www.google.com/maps/search/九州夢大吊橋" target="_blank" class="hover:text-sky-500">九州夢大吊橋：日本最長</a></li>
+                            <li><a href="https://www.google.com/maps/search/阿蘇神社" target="_blank" class="hover:text-sky-500">阿蘇神社：千年歷史</a></li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t">
+                        <h4 class="font-bold text-slate-800 mb-2 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-teal-500" viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" /></svg>
+                            住宿
+                        </h4>
+                        <a href="https://www.google.com/maps/search/阿蘇+玄冬+Gentou+民宿" target="_blank" class="text-slate-600 hover:text-sky-500">阿蘇 玄冬 (Gentou) 民宿</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 4 -->
+            <div class="day-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="day4-阿蘇大觀峰的照片.jpg" alt="阿蘇大觀峰的照片" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-2xl font-bold text-sky-600">Day 4</h2>
+                        <span class="text-sm font-medium text-slate-500">7/27 (日)</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-700 mb-4">阿蘇 → 高千穗 → 熊本 <span class="text-sm text-slate-500 font-normal">(🚗 約2.5小時)</span></h3>
+                    
+                    <div class="relative timeline-path pl-5 border-l-2 border-slate-200">
+                        <div class="mb-4 relative timeline-item"><p class="font-semibold text-slate-800">09:20 - 大觀峰、草千里</p></div>
+                        <div class="mb-4 relative timeline-item"><p class="font-semibold text-slate-800">11:30 - 高千穗峽</p></div>
+                        <div class="mb-4 relative timeline-item"><p class="font-semibold text-slate-800">16:00 - 熊本下通商店街</p></div>
+                    </div>
+
+                    <div class="mt-6">
+                        <h4 class="font-bold text-slate-800 mb-3 flex items-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-amber-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                            景點與美食
+                        </h4>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2">
+                            <li><a href="https://www.google.com/maps/search/阿蘇+大觀峰+草千里" target="_blank" class="hover:text-sky-500">大觀峰＋草千里：壯麗火山</a></li>
+                            <li><a href="https://www.google.com/maps/search/高千穗峽" target="_blank" class="hover:text-sky-500">高千穗峽：神話聖地</a></li>
+                            <li><a href="https://www.google.com/maps/search/勝烈亭+熊本" target="_blank" class="hover:text-sky-500">勝烈亭：厚切豬排必嚐</a></li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t">
+                        <h4 class="font-bold text-slate-800 mb-2 flex items-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-teal-500" viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" /></svg>
+                            住宿
+                        </h4>
+                        <a href="https://www.google.com/maps/search/熊本+CANDEO+HOTELS" target="_blank" class="text-slate-600 hover:text-sky-500">熊本 CANDEO HOTELS</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 5 -->
+            <div class="day-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="day5-熊本城.jpg" alt="熊本城的照片" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-2xl font-bold text-sky-600">Day 5</h2>
+                        <span class="text-sm font-medium text-slate-500">7/28 (一)</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-700 mb-4">熊本 → 福岡・天神 <span class="text-sm text-slate-500 font-normal">(🚗 約1.5小時)</span></h3>
+                    
+                    <div class="relative timeline-path pl-5 border-l-2 border-slate-200">
+                        <div class="mb-4 relative timeline-item"><p class="font-semibold text-slate-800">09:00 - 熊本城 & 城彩苑</p></div>
+                        <div class="mb-4 relative timeline-item"><p class="font-semibold text-slate-800">15:00 - 天神地下街 & Mina 天神</p></div>
+                    </div>
+
+                    <div class="mt-6">
+                        <h4 class="font-bold text-slate-800 mb-3 flex items-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-amber-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                            景點與美食
+                        </h4>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2">
+                            <li><a href="https://www.google.com/maps/search/熊本城" target="_blank" class="hover:text-sky-500">熊本城：日本三大名城</a></li>
+                            <li><a href="https://www.google.com/maps/search/城彩苑+熊本" target="_blank" class="hover:text-sky-500">城彩苑：馬肉點心</a></li>
+                            <li><a href="https://www.google.com/maps/search/火の国文龍拉麵+熊本" target="_blank" class="hover:text-sky-500">火の国文龍拉麵：熊本代表</a></li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t">
+                        <h4 class="font-bold text-slate-800 mb-2 flex items-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-teal-500" viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" /></svg>
+                            住宿
+                        </h4>
+                        <a href="https://www.google.com/maps/search/福岡天神+Nishitetsu+Grand+Hotel" target="_blank" class="text-slate-600 hover:text-sky-500">福岡天神 Nishitetsu Grand Hotel</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 6 -->
+            <div class="day-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="day6-大濠公園的照片.jpg" alt="大濠公園的照片" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-2xl font-bold text-sky-600">Day 6</h2>
+                        <span class="text-sm font-medium text-slate-500">7/29 (二)</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-700 mb-4">福岡・天神 → 福岡機場 <span class="text-sm text-slate-500 font-normal">(🚗 約30分鐘)</span></h3>
+                    
+                    <div class="relative timeline-path pl-5 border-l-2 border-slate-200">
+                        <div class="mb-4 relative timeline-item"><p class="font-semibold text-slate-800">09:30 - 大濠公園 & 草間彌生南瓜</p></div>
+                        <div class="mb-4 relative timeline-item"><p class="font-semibold text-slate-800">11:00 - 還車</p></div>
+                        <div class="mb-4 relative timeline-item"><p class="font-semibold text-slate-800">11:30 - 福岡機場午餐</p></div>
+                    </div>
+
+                    <div class="mt-6">
+                        <h4 class="font-bold text-slate-800 mb-3 flex items-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-amber-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                            景點與美食
+                        </h4>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2">
+                            <li><a href="https://www.google.com/maps/search/大濠公園+福岡" target="_blank" class="hover:text-sky-500">大濠公園：市中心綠地</a></li>
+                            <li><a href="https://www.google.com/maps/search/草間彌生+南瓜+福岡" target="_blank" class="hover:text-sky-500">草間彌生南瓜：藝術打卡點</a></li>
+                            <li><a href="https://www.google.com/maps/search/拉麵滑走路+福岡機場" target="_blank" class="hover:text-sky-500">拉麵滑走路：機場拉麵街</a></li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t">
+                        <h4 class="font-bold text-slate-800 mb-2 flex items-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-red-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" /></svg>
+                            住宿
+                        </h4>
+                        <p class="text-slate-600">無</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <footer class="text-center mt-12 text-slate-500 text-sm">
+            <p>祝您旅途愉快！</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
